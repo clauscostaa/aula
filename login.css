@@ -1,0 +1,61 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #000080; /* Azul escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+}
+
+.login-container {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #000080;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center; /* Centraliza o texto e os elementos dentro do container */
+}
+
+.login-logo {
+    max-width: 150px; /* Define o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto "Login" */
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000080; /* Azul */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%; /* Reduz a largura dos campos para 80% do container */
+    padding: 10px; /* Adiciona espaço interno nos campos */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    font-size: 16px; /* Tamanho do texto nos campos */
+    border: 1px solid #ccc; /* Bordas dos campos */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro dos campos */
+}
+
+button {
+    width: 80%; /* Reduz a largura do botão para 80% do container */
+    padding: 10px; /* Adiciona espaço interno no botão */
+    font-size: 16px; /* Tamanho do texto no botão */
+    background-color: #007bff; /* Azul escuro */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Adiciona o cursor de ponteiro ao passar o mouse */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais claro ao passar o mouse */
+}
