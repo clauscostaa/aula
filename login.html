@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login e Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; gap: 50px;">
+        <!-- Formulário de Login -->
+        <form id="login-form" class="login-container" onsubmit="return validarLogin(event)">
+            <h1>Login</h1>
+            <div>
+                <img src="./images/OIP.webp" alt="Imagem do usuário" class="login-logo">
+            </div>
+            <div>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Formulário de Cadastro -->
+        <form id="register-form" class="login-container" onsubmit="return cadastrarUsuario(event)">
+            <h1>Cadastro</h1>
+            <div>
+                <label for="new-username">Novo Usuário:</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Digite seu nome de usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="new-password">Nova Senha:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
